@@ -1,4 +1,4 @@
-# BioAgent Development Guide
+# LyceumAI Development Guide
 
 Deeper dive into the architecture and internals, complementary to `docs/architecture.md` (overview) and `paper/supplementary/S2_methods_detail.md` (academic detail).
 

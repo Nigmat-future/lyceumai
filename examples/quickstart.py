@@ -1,4 +1,4 @@
-"""BioAgent quickstart — minimal programmatic usage example.
+"""LyceumAI quickstart — minimal programmatic usage example.
 
 Run from the project root:
     python examples/quickstart.py
@@ -59,7 +59,7 @@ initial_state = {
 thread_id = str(uuid.uuid4())
 config = {"configurable": {"thread_id": thread_id}, "recursion_limit": 100}
 
-print(f"Starting BioAgent research (thread: {thread_id})")
+print(f"Starting LyceumAI research (thread: {thread_id})")
 print(f"Question: {initial_state['research_question']}\n")
 
 final_state = initial_state
@@ -82,5 +82,5 @@ print(f"Hypotheses: {len(final_state.get('hypotheses', []))}")
 print(f"Sections written: {list(final_state.get('paper_sections', {}).keys())}")
 print(f"Figures: {len(final_state.get('figures', []))}")
 print(f"Thread ID: {thread_id}")
-print(f"\nResume with: bioagent resume --thread {thread_id}")
-print(f"Export with: bioagent export --thread {thread_id} --format both")
+print(f"\nResume with: lyceumai resume --thread {thread_id}")
+print(f"Export with: lyceumai export --thread {thread_id} --format both")

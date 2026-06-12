@@ -1,5 +1,5 @@
 """
-Real end-to-end BioAgent run: BRAF V600E melanoma drug resistance.
+Real end-to-end LyceumAI run: BRAF V600E melanoma drug resistance.
 
 Records timing, token usage, and all outputs for the manuscript.
 Run from the project root:
@@ -41,7 +41,7 @@ def main():
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     print(f"\n{'='*65}")
-    print("  BioAgent — BRAF V600E Melanoma Case Study")
+    print("  LyceumAI — BRAF V600E Melanoma Case Study")
     print(f"  Thread: {THREAD_ID}")
     print(f"  Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*65}\n")
@@ -176,7 +176,7 @@ def main():
     LOG_PATH.write_text(json.dumps(log, indent=2, default=str), encoding="utf-8")
     print(f"Provenance log -> {LOG_PATH}")
     print(f"Manuscript     -> workspace/output/")
-    print(f"Resume thread  -> bioagent resume --thread {THREAD_ID}\n")
+    print(f"Resume thread  -> lyceumai resume --thread {THREAD_ID}\n")
 
 
 if __name__ == "__main__":

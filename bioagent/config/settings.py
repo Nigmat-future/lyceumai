@@ -1,4 +1,4 @@
-"""BioAgent configuration management via pydantic-settings."""
+"""LyceumAI configuration management via pydantic-settings."""
 
 import os
 from pathlib import Path
@@ -53,7 +53,7 @@ class Settings(BaseSettings):
 
     # --- Logging ---
     log_level: str = "INFO"
-    log_file: str = "bioagent.log"
+    log_file: str = "lyceumai.log"
 
     # --- Network ---
     # Set to False only when using a local proxy that intercepts TLS (e.g. Clash).

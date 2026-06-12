@@ -130,7 +130,7 @@ def display_session_status(
         for err in errors[-5:]:
             console.print(f"  - {err[:200]}")
 
-    console.print(f"\n[dim]Resume with: bioagent resume --thread {thread_id}[/dim]")
+    console.print(f"\n[dim]Resume with: lyceumai resume --thread {thread_id}[/dim]")
 
 
 def display_code_execution(filename: str, status: str) -> None:

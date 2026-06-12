@@ -1,12 +1,12 @@
-# Contributing to BioAgent
+# Contributing to LyceumAI
 
 Thank you for considering a contribution. This document covers the practical setup, testing, and review process.
 
 ## Development setup
 
 ```bash
-git clone https://github.com/Nigmat-future/bioagent.git
-cd bioagent
+git clone https://github.com/Nigmat-future/lyceumai.git
+cd lyceumai
 pip install -e ".[dev]"
 pre-commit install
 ```
@@ -61,9 +61,9 @@ Create `benchmarks/cases/<name>.py` with a `BenchmarkCase` dataclass instance, t
 
 ## Reporting bugs
 
-Open an issue at <https://github.com/Nigmat-future/bioagent/issues> with:
+Open an issue at <https://github.com/Nigmat-future/lyceumai/issues> with:
 
-1. BioAgent version (`pip show bioagent`).
+1. LyceumAI version (`pip show lyceumai`).
 2. Python version and OS.
 3. Full traceback.
 4. Minimal reproduction script.

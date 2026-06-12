@@ -1,8 +1,8 @@
-# BioAgent Architecture
+# LyceumAI Architecture
 
 ## Overview
 
-BioAgent implements a **blackboard multi-agent architecture** using LangGraph's `StateGraph`. All agents share a single `ResearchState` object (the blackboard). Each agent reads relevant fields, invokes tools via the Anthropic SDK's native tool-use protocol, and writes structured results back to state. The orchestrator agent directs which agent runs next.
+LyceumAI implements a **blackboard multi-agent architecture** using LangGraph's `StateGraph`. All agents share a single `ResearchState` object (the blackboard). Each agent reads relevant fields, invokes tools via the Anthropic SDK's native tool-use protocol, and writes structured results back to state. The orchestrator agent directs which agent runs next.
 
 ## LangGraph StateGraph
 

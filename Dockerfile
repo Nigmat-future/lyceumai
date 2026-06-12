@@ -1,8 +1,8 @@
 FROM python:3.11-slim
 
-LABEL org.opencontainers.image.title="BioAgent"
-LABEL org.opencontainers.image.description="Autonomous multi-agent bioinformatics research system"
-LABEL org.opencontainers.image.source="https://github.com/nigmatrahim/bioagent"
+LABEL org.opencontainers.image.title="LyceumAI"
+LABEL org.opencontainers.image.description="Peripatetic multi-agent bioinformatics research system"
+LABEL org.opencontainers.image.source="https://github.com/Nigmat-future/lyceumai"
 LABEL org.opencontainers.image.licenses="MIT"
 
 ENV PYTHONUNBUFFERED=1 \
@@ -29,5 +29,5 @@ RUN pip install -e .
 RUN mkdir -p /app/workspace /app/checkpoints
 VOLUME ["/app/workspace", "/app/checkpoints"]
 
-ENTRYPOINT ["bioagent"]
+ENTRYPOINT ["lyceumai"]
 CMD ["--help"]
