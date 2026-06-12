@@ -1,7 +1,7 @@
 [project]
-name = "bioagent"
+name = "lyceumai"
 version = "0.2.0"
-description = "Autonomous multi-agent system for end-to-end bioinformatics research"
+description = "A peripatetic multi-agent system for end-to-end bioinformatics research"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
@@ -63,12 +63,13 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Nigmat-future/bioagent"
-Repository = "https://github.com/Nigmat-future/bioagent"
-Documentation = "https://github.com/Nigmat-future/bioagent#readme"
-Issues = "https://github.com/Nigmat-future/bioagent/issues"
+Homepage = "https://github.com/Nigmat-future/lyceumai"
+Repository = "https://github.com/Nigmat-future/lyceumai"
+Documentation = "https://github.com/Nigmat-future/lyceumai#readme"
+Issues = "https://github.com/Nigmat-future/lyceumai/issues"
 
 [project.scripts]
+lyceumai = "bioagent.cli.main:app"
 bioagent = "bioagent.cli.main:app"
 
 [build-system]

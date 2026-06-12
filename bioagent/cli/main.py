@@ -1,4 +1,4 @@
-"""BioAgent CLI — command-line interface for the research agent."""
+"""LyceumAI CLI — command-line interface for the research agent."""
 
 from __future__ import annotations
 
@@ -18,8 +18,8 @@ from bioagent.cli.display import (
 )
 
 app = typer.Typer(
-    name="bioagent",
-    help="Autonomous bioinformatics research agent.",
+    name="lyceumai",
+    help="Peripatetic bioinformatics research agent.",
     no_args_is_help=True,
 )
 
@@ -166,7 +166,7 @@ def research(
     tid = thread_id or str(uuid.uuid4())
     config = {"configurable": {"thread_id": tid}, "recursion_limit": 100}
 
-    console.print("\n[bold green]BioAgent Research Session[/bold green]")
+    console.print("\n[bold green]LyceumAI Research Session[/bold green]")
     console.print(f"[dim]Thread: {tid}[/dim]")
     console.print(f"[bold]Question:[/bold] {question}")
     if topic:
@@ -192,7 +192,7 @@ def research(
 
     except KeyboardInterrupt:
         console.print("\n[yellow]Interrupted. Session state is saved.[/yellow]")
-        console.print(f"[dim]Resume with: bioagent resume --thread {tid}[/dim]")
+        console.print(f"[dim]Resume with: lyceumai resume --thread {tid}[/dim]")
     except Exception as exc:
         display_error(f"Graph execution failed: {exc}")
         logger.exception("Graph execution error")
@@ -250,7 +250,7 @@ def resume(
 
     except KeyboardInterrupt:
         console.print("\n[yellow]Interrupted. Session state is saved.[/yellow]")
-        console.print(f"[dim]Resume with: bioagent resume --thread {thread_id}[/dim]")
+        console.print(f"[dim]Resume with: lyceumai resume --thread {thread_id}[/dim]")
     except Exception as exc:
         display_error(f"Resume failed: {exc}")
         logger.exception("Resume error")
